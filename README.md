@@ -11,7 +11,7 @@ React-basierte Reise-Recherche-App zur automatischen Generierung von Such-URLs f
 
 ## Live Demo
 
-👉 **[reise-planer auf GitHub Pages](https://[username].github.io/reise-planer/)**
+👉 **[reise-planer auf GitHub Pages](https://grischan15.github.io/reise-planer/)**
 
 ## Entwicklung
 
