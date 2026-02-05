@@ -1,0 +1,177 @@
+{
+  "destinations": [
+    {
+      "id": "antalya",
+      "name": "Antalya",
+      "country": "Türkei",
+      "countryDE": "Türkei",
+      "kiwiSlug": "antalya-turkei",
+      "airbnbFormat": "Antalya--T%C3%BCrkei",
+      "bookingFormat": "Antalya%2C+T%C3%BCrkei",
+      "lat": 36.8969,
+      "lon": 30.7133
+    },
+    {
+      "id": "marrakesch",
+      "name": "Marrakesch",
+      "country": "Marokko",
+      "countryDE": "Marokko",
+      "kiwiSlug": "marrakesch-marokko",
+      "airbnbFormat": "Marrakesch--Marokko",
+      "bookingFormat": "Marrakesch%2C+Marokko",
+      "lat": 31.6295,
+      "lon": -7.9811
+    },
+    {
+      "id": "agadir",
+      "name": "Agadir",
+      "country": "Marokko",
+      "countryDE": "Marokko",
+      "kiwiSlug": "agadir-marokko",
+      "airbnbFormat": "Agadir--Marokko",
+      "bookingFormat": "Agadir%2C+Marokko",
+      "lat": 30.4278,
+      "lon": -9.5981
+    },
+    {
+      "id": "banjul",
+      "name": "Banjul",
+      "country": "Gambia",
+      "countryDE": "Gambia",
+      "kiwiSlug": "banjul-gambia",
+      "airbnbFormat": "Banjul--Gambia",
+      "bookingFormat": "Banjul%2C+Gambia",
+      "lat": 13.4549,
+      "lon": -16.5790
+    },
+    {
+      "id": "sal",
+      "name": "Sal",
+      "country": "Kap Verde",
+      "countryDE": "Kap Verde",
+      "kiwiSlug": "sal-kap-verde",
+      "airbnbFormat": "Sal--Kap-Verde",
+      "bookingFormat": "Sal%2C+Kap+Verde",
+      "lat": 16.7356,
+      "lon": -22.9435
+    },
+    {
+      "id": "larnaka",
+      "name": "Larnaka",
+      "country": "Zypern",
+      "countryDE": "Zypern",
+      "kiwiSlug": "larnaka-zypern",
+      "airbnbFormat": "Larnaka--Zypern",
+      "bookingFormat": "Larnaka%2C+Zypern",
+      "lat": 34.9229,
+      "lon": 33.6232
+    },
+    {
+      "id": "paphos",
+      "name": "Paphos",
+      "country": "Zypern",
+      "countryDE": "Zypern",
+      "kiwiSlug": "paphos-zypern",
+      "airbnbFormat": "Paphos--Zypern",
+      "bookingFormat": "Paphos%2C+Zypern",
+      "lat": 34.7754,
+      "lon": 32.4245
+    },
+    {
+      "id": "tirana",
+      "name": "Tirana",
+      "country": "Albanien",
+      "countryDE": "Albanien",
+      "kiwiSlug": "tirana-albanien",
+      "airbnbFormat": "Tirana--Albanien",
+      "bookingFormat": "Tirana%2C+Albanien",
+      "lat": 41.3275,
+      "lon": 19.8187
+    },
+    {
+      "id": "palma",
+      "name": "Palma",
+      "country": "Spanien",
+      "countryDE": "Spanien",
+      "kiwiSlug": "palma-spanien",
+      "airbnbFormat": "Palma--Spanien",
+      "bookingFormat": "Palma%2C+Spanien",
+      "lat": 39.5696,
+      "lon": 2.6502
+    },
+    {
+      "id": "faro",
+      "name": "Faro",
+      "country": "Portugal",
+      "countryDE": "Portugal",
+      "kiwiSlug": "faro-portugal",
+      "airbnbFormat": "Faro--Portugal",
+      "bookingFormat": "Faro%2C+Portugal",
+      "lat": 37.0194,
+      "lon": -7.9322
+    },
+    {
+      "id": "malaga",
+      "name": "Malaga",
+      "country": "Spanien",
+      "countryDE": "Spanien",
+      "kiwiSlug": "malaga-spanien",
+      "airbnbFormat": "Malaga--Spanien",
+      "bookingFormat": "Malaga%2C+Spanien",
+      "lat": 36.6749,
+      "lon": -4.4991
+    },
+    {
+      "id": "hurghada",
+      "name": "Hurghada",
+      "country": "Ägypten",
+      "countryDE": "Ägypten",
+      "kiwiSlug": "hurghada-agypten",
+      "airbnbFormat": "Hurghada--%C3%84gypten",
+      "bookingFormat": "Hurghada%2C+%C3%84gypten",
+      "lat": 27.2579,
+      "lon": 33.8116
+    },
+    {
+      "id": "sharm",
+      "name": "Sharm el Sheikh",
+      "country": "Ägypten",
+      "countryDE": "Ägypten",
+      "kiwiSlug": "sharm-el-sheikh-agypten",
+      "airbnbFormat": "Sharm-El-Sheikh--%C3%84gypten",
+      "bookingFormat": "Sharm+el+Sheikh%2C+%C3%84gypten",
+      "lat": 27.9158,
+      "lon": 34.3300
+    },
+    {
+      "id": "tunis",
+      "name": "Tunis",
+      "country": "Tunesien",
+      "countryDE": "Tunesien",
+      "kiwiSlug": "tunis-tunesien",
+      "airbnbFormat": "Tunis--Tunesien",
+      "bookingFormat": "Tunis%2C+Tunesien",
+      "lat": 36.8065,
+      "lon": 10.1815
+    },
+    {
+      "id": "djerba",
+      "name": "Djerba",
+      "country": "Tunesien",
+      "countryDE": "Tunesien",
+      "kiwiSlug": "djerba-tunesien",
+      "airbnbFormat": "Djerba--Tunesien",
+      "bookingFormat": "Djerba%2C+Tunesien",
+      "lat": 33.8076,
+      "lon": 10.8451
+    }
+  ],
+  "departureCities": [
+    { "id": "frankfurt-am-main", "name": "Frankfurt am Main" },
+    { "id": "muenchen", "name": "München" },
+    { "id": "berlin", "name": "Berlin" },
+    { "id": "koeln", "name": "Köln" },
+    { "id": "duesseldorf", "name": "Düsseldorf" },
+    { "id": "stuttgart", "name": "Stuttgart" }
+  ]
+}
