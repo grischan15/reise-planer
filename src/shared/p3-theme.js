@@ -39,6 +39,7 @@ export const P3_COLORS = {
   
   // Text-Varianten
   textPrimary: '#d5d4c7',   // Haupttext (beige)
+  textLight: '#d5d4c7',     // Alias für beige - helle Schrift auf dunklem Hintergrund
   textSecondary: '#9aa3ab', // Gedämpfter Text
   textMuted: '#6b7280',     // Sehr gedämpft
 };
