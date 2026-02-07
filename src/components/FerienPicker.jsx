@@ -3,9 +3,30 @@ import { formatDateDE, daysBetween } from '../utils/dateHelpers'
 
 /**
  * Ferien-Auswahl Komponente
- * - Zeigt Schulferien als anklickbare Buttons
- * - Jahr-Filter Tabs
- * - Farbcodierung: vergangen (grau), aktuell (grün), zukünftig (blau)
+ *
+ * Zeigt Schulferien (Hessen) als anklickbare Karten mit Jahr-Filter.
+ * Ein Klick auf eine Ferienkarte übernimmt den Zeitraum ins Suchformular.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Array<Object>} props.ferien - Array von Ferien-Objekten (aus useFerien Hook)
+ * @param {Array<number>} props.availableYears - Verfügbare Jahre für Filter-Tabs
+ * @param {number|null} props.selectedYear - Aktuell gefiltertes Jahr (null = alle)
+ * @param {function} props.onYearChange - Callback wenn Jahr-Tab geklickt wird
+ * @param {function} props.onSelect - Callback(von, bis) wenn Ferien ausgewählt werden
+ * @param {string} props.selectedFrom - Aktuell gewähltes Startdatum (für Hervorhebung)
+ * @param {string} props.selectedTo - Aktuell gewähltes Enddatum (für Hervorhebung)
+ *
+ * @example
+ * <FerienPicker
+ *   ferien={ferien}
+ *   availableYears={[2026, 2027]}
+ *   selectedYear={2026}
+ *   onYearChange={setSelectedYear}
+ *   onSelect={(von, bis) => setDates(von, bis)}
+ *   selectedFrom={dateFrom}
+ *   selectedTo={dateTo}
+ * />
  */
 export function FerienPicker({
   ferien,

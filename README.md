@@ -31,10 +31,15 @@ npm run build
 ```
 reise-planer/
 ├── docs/           # Dokumentation
-├── data/           # JSON-Datenbanken (Ziele, Ferien)
+│   ├── ARCHITECTURE.md      # Architektur & Datenfluss
+│   ├── Reise_Recherche_Workflow.md
+│   └── Shared_Components_Library.md
+├── data/           # JSON-Datenbanken
+│   ├── destinations.json    # 15 Reiseziele
+│   └── ferien-hessen.json   # Schulferien Hessen
 ├── src/
-│   ├── components/ # UI-Komponenten
-│   ├── hooks/      # Custom Hooks
+│   ├── components/ # UI-Komponenten (JSDoc dokumentiert)
+│   ├── hooks/      # Custom Hooks (JSDoc dokumentiert)
 │   ├── shared/     # P3 Design System
 │   └── utils/      # Hilfsfunktionen
 ├── _legacy/        # Alte HTML-Version

@@ -3,10 +3,39 @@ import { calculateKiwiDates, formatDateISO } from '../utils/dateHelpers'
 import { generateAllURLs } from '../utils/urlBuilders'
 
 /**
- * Hook für URL-Generierung
- * - Verwaltet alle Suchparameter
- * - Berechnet Kiwi-Flex-Daten
- * - Generiert alle URLs
+ * Hook für URL-Generierung und Suchparameter
+ *
+ * Verwaltet alle Reise-Suchparameter (Datum, Reisende, Abflug, etc.)
+ * und generiert Such-URLs für alle Portale.
+ *
+ * Unterstützte Portale:
+ * - Kiwi.com (Flüge) - mit Flex-Datum-Berechnung
+ * - Booking.com (Apartments)
+ * - Airbnb (Unterkünfte)
+ * - Kiwi Cars (Mietwagen)
+ * - Auswärtiges Amt (Reisehinweise via Google)
+ * - Wetter.de (Reisewetter via Google)
+ *
+ * @returns {Object} State, Setters und Actions
+ * @returns {string} returns.dateFrom - Frühestes Hinflugdatum
+ * @returns {string} returns.dateTo - Spätestes Rückflugdatum
+ * @returns {number} returns.flex - Flexibilität in Tagen (1-4)
+ * @returns {number} returns.adults - Anzahl Erwachsene
+ * @returns {number} returns.bedrooms - Anzahl Schlafzimmer
+ * @returns {number} returns.checkedBags - Anzahl Aufgabegepäck
+ * @returns {string} returns.departureCity - Abflug-Stadt ID
+ * @returns {number} returns.radius - Suchradius in km
+ * @returns {number} returns.driverAge - Alter des Fahrers
+ * @returns {Array} returns.urls - Generierte URL-Objekte
+ * @returns {Object|null} returns.kiwiDates - Berechnete Kiwi-Flex-Daten
+ * @returns {function} returns.generateURLs - URLs für Destination generieren
+ * @returns {function} returns.openURL - Einzelne URL öffnen (index)
+ * @returns {function} returns.openAllURLs - Alle URLs öffnen (async)
+ * @returns {function} returns.copyURLs - URLs in Zwischenablage kopieren (async)
+ * @returns {function} returns.setFerienDates - Ferien-Zeitraum übernehmen
+ *
+ * @example
+ * const { dateFrom, setDateFrom, generateURLs, urls, openAllURLs } = useURLGenerator()
  */
 export function useURLGenerator() {
   // Reisedaten

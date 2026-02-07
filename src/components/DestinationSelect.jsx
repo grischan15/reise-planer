@@ -1,7 +1,26 @@
 import { P3_COLORS } from '../shared/p3-theme'
 
 /**
- * Destination-Auswahl mit Edit-Button
+ * Reiseziel-Auswahl Dropdown mit Edit-Button
+ *
+ * Zeigt alle verfügbaren Destinationen als Select-Dropdown.
+ * Optional mit Edit-Button zum Bearbeiten der URL-Formate.
+ * Modifizierte Ziele werden mit einem gelben Punkt markiert.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Array<Object>} props.destinations - Array von Destination-Objekten
+ * @param {string} props.selectedId - ID der aktuell ausgewählten Destination
+ * @param {function} props.onChange - Callback(id) bei Zielauswahl
+ * @param {function} props.onEditClick - Callback wenn Edit-Button geklickt wird
+ *
+ * @example
+ * <DestinationSelect
+ *   destinations={destinations}
+ *   selectedId="antalya"
+ *   onChange={setSelectedId}
+ *   onEditClick={() => setShowEditor(true)}
+ * />
  */
 export function DestinationSelect({
   destinations,

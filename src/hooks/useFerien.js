@@ -3,10 +3,25 @@ import ferienData from '../../data/ferien-hessen.json'
 import { isPast, isCurrent, isWithinMonths, daysBetween } from '../utils/dateHelpers'
 
 /**
- * Hook für Schulferien-Daten
- * - Filtert auf nächste 18 Monate
- * - Markiert vergangen/aktuell/zukünftig
- * - Jahr-Filter möglich
+ * Hook für Schulferien-Daten (Hessen)
+ *
+ * Lädt Feriendaten aus JSON, reichert sie mit Status an (vergangen/aktuell/zukünftig)
+ * und bietet Filterung nach Zeitraum und Jahr.
+ *
+ * Datenquelle: data/ferien-hessen.json (Kultusministerium Hessen)
+ * Reise-Zeitraum: Offizieller Ferienbeginn -2 Tage, Ende +2 Tage
+ *
+ * @param {number} [filterMonths=18] - Ferien auf nächste X Monate beschränken (0 = alle)
+ * @returns {Object} Ferien-State und -Actions
+ * @returns {Array} returns.ferien - Gefilterte Ferien mit Status
+ * @returns {Array} returns.allFerien - Alle Ferien ohne Filter
+ * @returns {number|null} returns.selectedYear - Aktives Jahr-Filter
+ * @returns {function} returns.setSelectedYear - Jahr-Filter setzen
+ * @returns {Array<number>} returns.availableYears - Verfügbare Jahre
+ * @returns {string} returns.bundesland - Bundesland der Ferien
+ *
+ * @example
+ * const { ferien, selectedYear, setSelectedYear, availableYears } = useFerien(18)
  */
 export function useFerien(filterMonths = 18) {
   const [selectedYear, setSelectedYear] = useState(null) // null = alle

@@ -1,7 +1,7 @@
 {
   "bundesland": "Hessen",
-  "quelle": "https://www.schulferien.org/hessen/ferien/",
-  "hinweis": "Daten angepasst: Sa vor Ferienbeginn bis So nach Ferienende (realistischer Reisezeitraum)",
+  "quelle": "https://kultus.hessen.de/schulsystem/ferien/ferientermine",
+  "hinweis": "Reise-Zeitraum: Offizieller Ferienbeginn -2 Tage, Offizielles Ferienende +2 Tage (Sa vor Start, So nach Ende)",
   "ferien": [
     {
       "id": "ostern-2026",
@@ -14,23 +14,13 @@
       "jahr": 2026
     },
     {
-      "id": "pfingsten-2026",
-      "name": "Pfingstferien",
-      "emoji": "🌸",
-      "von": "2026-05-23",
-      "bis": "2026-05-31",
-      "vonOffiziell": "2026-05-26",
-      "bisOffiziell": "2026-05-26",
-      "jahr": 2026
-    },
-    {
       "id": "sommer-2026",
       "name": "Sommerferien",
       "emoji": "☀️",
-      "von": "2026-07-04",
-      "bis": "2026-08-16",
-      "vonOffiziell": "2026-07-06",
-      "bisOffiziell": "2026-08-14",
+      "von": "2026-06-27",
+      "bis": "2026-08-09",
+      "vonOffiziell": "2026-06-29",
+      "bisOffiziell": "2026-08-07",
       "jahr": 2026
     },
     {
@@ -38,7 +28,7 @@
       "name": "Herbstferien",
       "emoji": "🍂",
       "von": "2026-10-03",
-      "bis": "2026-10-18",
+      "bis": "2026-10-19",
       "vonOffiziell": "2026-10-05",
       "bisOffiziell": "2026-10-17",
       "jahr": 2026
@@ -47,10 +37,10 @@
       "id": "weihnachten-2026",
       "name": "Weihnachtsferien",
       "emoji": "🎄",
-      "von": "2026-12-19",
-      "bis": "2027-01-10",
-      "vonOffiziell": "2026-12-21",
-      "bisOffiziell": "2027-01-09",
+      "von": "2026-12-21",
+      "bis": "2027-01-14",
+      "vonOffiziell": "2026-12-23",
+      "bisOffiziell": "2027-01-12",
       "jahr": 2026
     },
     {
@@ -60,47 +50,17 @@
       "von": "2027-03-20",
       "bis": "2027-04-04",
       "vonOffiziell": "2027-03-22",
-      "bisOffiziell": "2027-04-03",
-      "jahr": 2027
-    },
-    {
-      "id": "pfingsten-2027",
-      "name": "Pfingstferien",
-      "emoji": "🌸",
-      "von": "2027-05-15",
-      "bis": "2027-05-23",
-      "vonOffiziell": "2027-05-18",
-      "bisOffiziell": "2027-05-18",
+      "bisOffiziell": "2027-04-02",
       "jahr": 2027
     },
     {
       "id": "sommer-2027",
       "name": "Sommerferien",
       "emoji": "☀️",
-      "von": "2027-07-03",
-      "bis": "2027-08-15",
-      "vonOffiziell": "2027-07-05",
-      "bisOffiziell": "2027-08-13",
-      "jahr": 2027
-    },
-    {
-      "id": "herbst-2027",
-      "name": "Herbstferien",
-      "emoji": "🍂",
-      "von": "2027-10-02",
-      "bis": "2027-10-17",
-      "vonOffiziell": "2027-10-04",
-      "bisOffiziell": "2027-10-16",
-      "jahr": 2027
-    },
-    {
-      "id": "weihnachten-2027",
-      "name": "Weihnachtsferien",
-      "emoji": "🎄",
-      "von": "2027-12-18",
-      "bis": "2028-01-09",
-      "vonOffiziell": "2027-12-23",
-      "bisOffiziell": "2028-01-08",
+      "von": "2027-06-26",
+      "bis": "2027-08-08",
+      "vonOffiziell": "2027-06-28",
+      "bisOffiziell": "2027-08-06",
       "jahr": 2027
     }
   ]

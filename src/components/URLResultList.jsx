@@ -2,7 +2,27 @@ import { useState } from 'react'
 import { P3_COLORS } from '../shared/p3-theme'
 
 /**
- * Liste der generierten URLs mit Aktionen
+ * Liste der generierten Such-URLs mit Aktionen
+ *
+ * Zeigt alle generierten URLs (Flüge, Unterkünfte, Mietwagen, Infos)
+ * mit Buttons zum Öffnen einzelner/aller Tabs und Kopieren.
+ *
+ * Features:
+ * - Quick-Links als farbige Buttons oben
+ * - "Alle Tabs öffnen" mit Popup-Blocker-Handling
+ * - URLs in Zwischenablage kopieren
+ * - Status-Meldungen (erfolgreich, blockiert)
+ *
+ * @component
+ * @param {Object} props
+ * @param {Array<Object>} props.urls - Generierte URL-Objekte {type, name, icon, color, url}
+ * @param {Object} props.destination - Ausgewählte Destination
+ * @param {string} props.dateFrom - Startdatum für Anzeige
+ * @param {string} props.dateTo - Enddatum für Anzeige
+ * @param {number} props.adults - Anzahl Reisende für Anzeige
+ * @param {function} props.onOpenURL - Callback(index) zum Öffnen einer URL
+ * @param {function} props.onOpenAll - Async Callback zum Öffnen aller URLs
+ * @param {function} props.onCopyAll - Async Callback zum Kopieren aller URLs
  */
 export function URLResultList({
   urls,

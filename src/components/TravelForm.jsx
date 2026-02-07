@@ -2,7 +2,35 @@ import { P3_COLORS } from '../shared/p3-theme'
 import { formatDateDE, daysBetween } from '../utils/dateHelpers'
 
 /**
- * Formular für Reiseparameter
+ * Formular für alle Reiseparameter
+ *
+ * Enthält drei Sektionen:
+ * 1. Reisezeitraum (Datum von/bis, Flexibilität) + berechnete Kiwi-Daten
+ * 2. Reisende & Gepäck (Anzahl, Schlafzimmer, Aufgabegepäck)
+ * 3. Abflughafen (Stadt, Radius, Fahrer-Alter für Mietwagen)
+ *
+ * @component
+ * @param {Object} props
+ * @param {string} props.dateFrom - Frühestes Hinflugdatum (YYYY-MM-DD)
+ * @param {string} props.dateTo - Spätestes Rückflugdatum (YYYY-MM-DD)
+ * @param {number} props.flex - Flexibilität in Tagen (1-4)
+ * @param {number} props.adults - Anzahl Erwachsene
+ * @param {number} props.bedrooms - Anzahl Schlafzimmer
+ * @param {number} props.checkedBags - Anzahl Aufgabegepäck
+ * @param {string} props.departureCity - Abflug-Stadt ID (z.B. "frankfurt-am-main")
+ * @param {number} props.radius - Suchradius um Abflug-Stadt in km
+ * @param {number} props.driverAge - Alter des Fahrers für Mietwagen
+ * @param {Array<Object>} props.departureCities - Verfügbare Abflug-Städte
+ * @param {Object|null} props.kiwiDates - Berechnete Kiwi-Flex-Daten {kiwiHin, kiwiRueck}
+ * @param {function} props.onDateFromChange - Callback für Startdatum-Änderung
+ * @param {function} props.onDateToChange - Callback für Enddatum-Änderung
+ * @param {function} props.onFlexChange - Callback für Flex-Änderung
+ * @param {function} props.onAdultsChange - Callback für Erwachsene-Änderung
+ * @param {function} props.onBedroomsChange - Callback für Schlafzimmer-Änderung
+ * @param {function} props.onCheckedBagsChange - Callback für Gepäck-Änderung
+ * @param {function} props.onDepartureCityChange - Callback für Stadt-Änderung
+ * @param {function} props.onRadiusChange - Callback für Radius-Änderung
+ * @param {function} props.onDriverAgeChange - Callback für Alter-Änderung
  */
 export function TravelForm({
   dateFrom,

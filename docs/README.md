@@ -40,5 +40,6 @@ reise-planer/
 
 ## Dokumentation
 
+- [Architektur & Datenfluss](./ARCHITECTURE.md)
 - [URL-Syntax & Workflow](./Reise_Recherche_Workflow.md)
 - [Shared Components](./Shared_Components_Library.md)

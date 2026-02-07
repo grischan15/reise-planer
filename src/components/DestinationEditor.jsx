@@ -4,6 +4,24 @@ import { P3Modal } from '../shared/components/P3Modal'
 
 /**
  * Modal zum Bearbeiten von Destination-Daten
+ *
+ * Ermöglicht die Korrektur von URL-Formaten wenn generierte Links
+ * nicht funktionieren. Änderungen werden in localStorage gespeichert.
+ *
+ * Bearbeitbare Felder:
+ * - kiwiSlug: URL-Teil für Kiwi.com (z.B. "antalya-turkei")
+ * - airbnbFormat: URL-Teil für Airbnb (z.B. "Antalya--T%C3%BCrkei")
+ * - bookingFormat: URL-Teil für Booking (z.B. "Antalya%2C+T%C3%BCrkei")
+ * - lat/lon: Koordinaten für Mietwagen-Suche
+ *
+ * @component
+ * @param {Object} props
+ * @param {boolean} props.isOpen - Ob Modal sichtbar ist
+ * @param {function} props.onClose - Callback zum Schließen
+ * @param {Object} props.destination - Die zu bearbeitende Destination
+ * @param {function} props.onSave - Callback(destId, field, value) zum Speichern
+ * @param {function} props.onReset - Callback(destId) zum Zurücksetzen auf Original
+ * @param {function} props.getOriginalValue - Callback(destId, field) für Originalwert
  */
 export function DestinationEditor({
   isOpen,

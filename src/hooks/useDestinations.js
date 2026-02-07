@@ -2,13 +2,30 @@ import { useState, useMemo, useCallback } from 'react'
 import { useStorage } from '../shared/useStorage'
 import destinationsData from '../../data/destinations.json'
 
+/** localStorage Key für User-Overrides */
 const OVERRIDES_KEY = 'destination_overrides'
 
 /**
  * Hook für Destinations-Daten mit User-Overrides
- * - Lädt Default-Daten aus JSON
- * - Merged mit localStorage-Korrekturen
- * - Ermöglicht Bearbeitung einzelner Felder
+ *
+ * Lädt Reiseziele aus JSON und merged sie mit localStorage-Korrekturen.
+ * Ermöglicht Benutzern, fehlerhafte URL-Formate zu korrigieren.
+ *
+ * Datenquelle: data/destinations.json (15+ Ziele)
+ * Overrides: localStorage['destination_overrides']
+ *
+ * @returns {Object} Destinations-State und -Actions
+ * @returns {Array<Object>} returns.destinations - Alle Ziele (mit Overrides gemerged)
+ * @returns {Array<Object>} returns.departureCities - Abflug-Städte
+ * @returns {string} returns.selectedId - Aktuell gewählte Destination-ID
+ * @returns {function} returns.setSelectedId - Destination auswählen
+ * @returns {Object|null} returns.selectedDestination - Gewählte Destination
+ * @returns {function} returns.updateDestination - Feld überschreiben (destId, field, value)
+ * @returns {function} returns.resetDestination - Overrides löschen (destId)
+ * @returns {function} returns.getOriginalValue - Originalwert holen (destId, field)
+ *
+ * @example
+ * const { destinations, selectedId, setSelectedId, updateDestination } = useDestinations()
  */
 export function useDestinations() {
   const [overrides, setOverrides] = useStorage(OVERRIDES_KEY, {})
